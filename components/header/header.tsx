@@ -15,16 +15,16 @@ const HeaderPage = (props: Props) => {
             {/* <Image ></Image> */}
           </div>
           <ul className="clsheaderpage-link">
-            <li>
+            <li className="clsheaderpage-link__item">
               <Link href={"/"}> PROJECTS</Link>
             </li>
-            <li>
+            <li className="clsheaderpage-link__item">
               <Link href={"/services"}>SERVICES</Link>
             </li>
-            <li>
+            <li className="clsheaderpage-link__item">
               <Link href={"/services"}>SERVICES</Link>
             </li>
-            <li>
+            <li className="clsheaderpage-link__item">
               <Link href={"/about"}>ABOUT</Link>
             </li>
           </ul>
