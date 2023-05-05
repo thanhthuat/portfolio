@@ -9,7 +9,7 @@ const DigitalServicesHeader = (props: Props) => {
       <div className="clsservicesheader-content">
         <div>
           <h2 className="clsservicesheader-text">
-            Digital <br /> Services
+            <p className="clsservicesheader-text__stroke"> Digital</p> <br /> Services
           </h2>
         </div>
 

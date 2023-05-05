@@ -19,6 +19,16 @@
   &-text {
     font-size: 80px;
     line-height: 88px;
+    &__stroke {
+      font-family: "ClashDisplay-Bold";
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      font-size: 80px;
+      line-height: 104px;
+      letter-spacing: 5.2px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
   }
   a {
     text-decoration-color: $white;
@@ -73,7 +83,7 @@
     position: relative;
     font-weight: 500;
     font-size: 13px;
-    letter-spacing:10% ;
+    letter-spacing: 10%;
     line-height: 13px;
     color: $white;
 

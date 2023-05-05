@@ -22,8 +22,17 @@
       font-weight: 600;
       font-size: 128px;
       line-height: 141px;
-      letter-spacing: 5%;
+      letter-spacing: 7.5px;
       color: $white;
+    }
+    &__title1 {
+     font-family: 'ClashDisplay-Bold';
+      color: transparent;
+      -webkit-text-stroke: 1px whitesmoke;
+      font-size: 128px;
+      line-height: 141px;
+      letter-spacing: 7.5px;
+      text-transform: uppercase;
     }
   }
   &-bg {

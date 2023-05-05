@@ -30,8 +30,18 @@
       h1 {
         font-size: 80px;
         line-height: 104px;
-        letter-spacing: 5%;
+        letter-spacing: 5.2px;
       }
+    }
+    &__stroke{
+       font-family: 'ClashDisplay-Bold';
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      font-size: 80px;
+        line-height: 104px;
+      letter-spacing: 5.2px;
+      text-transform: uppercase;
+      display: inline-block;
     }
   }
   &-textcontent {

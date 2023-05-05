@@ -12,12 +12,11 @@ const Contact = (props: Props) => {
         </div>
         <div className="clscontact-body">
           <h2 className="clscontact-body__title">
-            Let’s <br /> Connect
+            <p className="clscontact-body__title1">Let’s</p>
+            <br /> Connect
           </h2>
         </div>
-        <div className="clscontact-bg">
-            
-        </div>
+        <div className="clscontact-bg"></div>
         <div className="clscontact-footer">
           <Link href={"/"}>
             <button className="clscontact-footer__contact">

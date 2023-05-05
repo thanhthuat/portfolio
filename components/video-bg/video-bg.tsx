@@ -17,7 +17,8 @@ const VideoBg = (props: Props) => {
           <h1>
             {" "}
             Let take your product into the next
-            <br /> level with us
+             level with us{" "}
+            <p className="clsvideobg-text__stroke">Explore ↓</p>
           </h1>
         </div>
       </div>
