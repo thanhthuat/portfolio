@@ -1,0 +1,36 @@
+.clstextstroke {
+  padding-bottom: 75px;
+  &-content {
+    overflow: hidden;
+  }
+  &-text {
+    font-family: "ClashDisplay-Medium";
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 106px;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+    color: $white;
+    margin: 0 0px 0px -5px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: clip;
+    .mr-45 {
+      margin-right: 45px;
+    }
+    .ml-45 {
+      margin-left: 45px;
+    }
+    &__stroke {
+      font-family: "ClashDisplay-Bold";
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      font-size: 96px;
+      line-height: 106px;
+      letter-spacing: 5.5px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+  }
+}
