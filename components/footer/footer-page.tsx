@@ -8,21 +8,21 @@ function FooterPage({}: Props) {
     <footer className="clsfooterpage">
       <div className="clsfooterpage-content">
         <div className="clsfooterpage-social">
-          <img src="/image/logo.svg"></img>
-          <div className="clsfooterpage-social">
-            <span>
+          <img src="/image/logo.svg" className="logo"></img>
+          <div className="clsfooterpage-connect">
+            <span className="icon mr-8">
               <img src="/image/icons/Intagram.svg"></img>
             </span>
-            <span>
+            <span className="icon mr-8">
               <img src="/image/icons/Twitter.svg"></img>
             </span>
-            <span>
+            <span className="icon">
               <img src="/image/icons/Facebook.svg"></img>
             </span>
           </div>
         </div>
         <div className="clsfooterpage-page">
-          <div className="clsfooterpage-title">Page</div>
+          <p className="clsfooterpage-title">Page</p>
           <ul className="clsfooterpage-category">
             <li>
               <Link href={"/contact"}> Home</Link>
