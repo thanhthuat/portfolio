@@ -1,0 +1,29 @@
+import Link from "next/link";
+import React from "react";
+
+type Props = {};
+
+const DigitalServicesItem = (props: Props) => {
+  return (
+    <div className="clsdigitalitem">
+      <div className="clsdigitalitem-content">
+        <img
+          src="/image/logo-web.svg"
+          alt="logo-web"
+          className="clsdigitalitem-img"
+        />
+        <h3 className="clsdigitalitem-title"> WEB</h3>
+        <p className="clsdigitalitem-des">
+          Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum
+          est ultricies integer quis auctor elit sed. Odio morbi quis commodo
+          odio aenean
+        </p>
+        <Link href={"/"}>
+          <p className="clsdigitalitem-more">Explore WEB Services </p>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default DigitalServicesItem;

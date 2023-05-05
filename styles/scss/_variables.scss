@@ -1,0 +1,17 @@
+$purple-primary: #5c43d2;
+$purple: #9747FF;
+$white: #fff;
+$black-gradient: #090909;
+$black-gradient-primary: rgba(9, 9, 9, 0);
+$white-primary: rgba(255, 255, 255, 0.12);
+@mixin res($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin minRes($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}

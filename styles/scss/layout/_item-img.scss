@@ -1,0 +1,39 @@
+.clsitemimg {
+  &-content {
+    position: relative;
+  }
+  &-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  &-text {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    z-index: 10;
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      color: $white;
+    }
+    p {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 13px;
+      letter-spacing: 10%;
+      color: $white;
+    }
+  }
+}
+.clscategoryproject {
+  max-width: 1920px;
+  margin: 0 auto;
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px 32px;
+  }
+}
