@@ -6,7 +6,7 @@ interface DigitalServicesProps {}
 
 const DigitalServices: React.FC<DigitalServicesProps> = () => {
   return (
-    <section className="clsdigitalservices">
+    <section className="clsdigitalservices wapperlayout">
       <div className="clsdigitalservices-content">
         <DigitalServicesHeader />
         <div className="clsdigitalservices-category">

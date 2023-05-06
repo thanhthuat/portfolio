@@ -1,5 +1,7 @@
 .clstextstroke {
   padding-bottom: 75px;
+  display: flex;
+  justify-content: center;
   &-content {
     overflow: hidden;
   }

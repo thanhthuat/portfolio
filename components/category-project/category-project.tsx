@@ -5,7 +5,7 @@ type Props = {};
 
 const CategoryProject = (props: Props) => {
   return (
-    <div className="clscategoryproject">
+    <div className="clscategoryproject wapperlayout">
       <div className="clscategoryproject-content">
         {Array(6)
           .fill(null)

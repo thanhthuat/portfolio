@@ -5,7 +5,7 @@ type Props = {};
 const VideoBg = (props: Props) => {
   return (
     <section className="clsvideobg">
-      <video playsInline autoPlay muted loop className="clsvideobg-content">
+      <video playsInline autoPlay muted loop className="clsvideobg-content wapperlayout">
         <source src="/video/video-bg.mp4" type="video/mp4" />
       </video>
       <div className="clsvideobg-textcontent"> </div>

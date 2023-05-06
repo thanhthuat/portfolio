@@ -5,8 +5,8 @@ type Props = {};
 
 function FooterPage({}: Props) {
   return (
-    <footer className="clsfooterpage">
-      <div className="clsfooterpage-content">
+    <footer className="clsfooterpage ">
+      <div className="clsfooterpage-content wapperlayout">
         <div className="clsfooterpage-social">
           <img src="/image/logo.svg" className="logo"></img>
           <div className="clsfooterpage-connect">
@@ -39,7 +39,7 @@ function FooterPage({}: Props) {
           </ul>
         </div>
       </div>
-      <div className="clsfooterpage-coppyright">
+      <div className="clsfooterpage-coppyright wapperlayout">
         <div>
           <p>© Copyright belong to mthstudio</p>
         </div>
