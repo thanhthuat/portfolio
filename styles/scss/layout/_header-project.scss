@@ -1,0 +1,43 @@
+.clsheaderproject {
+  &-content {
+    height: 396px;
+    width: 100%;
+    position: relative;
+  }
+  &-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    h1 {
+      font-family: "ClashDisplay-Medium";
+      font-weight: 500;
+      font-size: 128px;
+      line-height: 128px;
+      letter-spacing: 7px;
+      color: $white;
+    }
+  }
+  &-category {
+    margin-top: 44px;
+    ul {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    ul > li {
+      font-family: "ClashDisplay-Semibold";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 23px;
+      list-style: none;
+      color: $gray;
+      margin-right: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  }
+}

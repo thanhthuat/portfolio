@@ -11,12 +11,15 @@ const HeaderPage = (props: Props) => {
       <div className="clsheaderpage-content">
         <nav className="clsheaderpage-navbar wapperlayout">
           <div className="clsheaderpage-logo">
-            <img src={"/image/logo.svg"} alt="logo"></img>
+            <Link href={"/"}>
+              <img src={"/image/logo.svg"} alt="logo"></img>
+            </Link>
+
             {/* <Image ></Image> */}
           </div>
           <ul className="clsheaderpage-link">
             <li className="clsheaderpage-link__item">
-              <Link href={"/"}> PROJECTS</Link>
+              <Link href={"/project"}> PROJECTS</Link>
             </li>
             <li className="clsheaderpage-link__item">
               <Link href={"/services"}>SERVICES</Link>

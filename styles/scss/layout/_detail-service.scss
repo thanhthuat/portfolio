@@ -1,0 +1,53 @@
+.clsdetailservice {
+  margin: 150px 0px 164px 0px;
+  padding: 0px 164px;
+  &-content {
+    display: flex;
+  }
+  &-blockleft {
+    flex-basis: 40%;
+    &__title {
+      h3 {
+        font-size: 64px;
+        line-height: 70px;
+        color: $white;
+      }
+    }
+    &__stroke {
+      font-family: "ClashDisplay-Bold";
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+    }
+  }
+  &-category {
+    ul > li {
+      color: $gray;
+      list-style: none;
+      margin-top: 12px;
+    }
+  }
+
+  &-blockright {
+    flex-basis: 60%;
+    &__title {
+      font-size: 48px;
+      line-height: 62px;
+      letter-spacing: 3.2px;
+      color: $white;
+    }
+    &__des {
+      margin-top: 32px;
+      color: rgba($color: $white, $alpha: 0.7);
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 31px;
+    }
+    &__img {
+      margin-top: 73px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

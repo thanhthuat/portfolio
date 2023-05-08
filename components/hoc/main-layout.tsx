@@ -8,23 +8,18 @@ import TextStroke from "@components/text-stroke/text-stroke";
 import VideoBg from "@components/video-bg/video-bg";
 import React from "react";
 
-interface HomeLayoutProps {
+interface MainLayoutProps {
   children?: React.ReactNode;
 }
 
-const HomeLayout: React.FC<HomeLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div>
       <HeaderPage />
-      <VideoBg />
-      <DigitalServices />
-      <TextStroke />
-      <CategoryProject />
-      <Contact />
-      <FooterPage />
       <main>{children}</main>
+      <FooterPage />
     </div>
   );
 };
 
-export default HomeLayout;
+export default MainLayout;

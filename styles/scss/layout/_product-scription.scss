@@ -1,0 +1,112 @@
+.clsproductdescription {
+  color: $white;
+  flex-basis: 40%;
+  padding-right: 32px;
+  &-content {
+  }
+  &-header {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba($color: $white, $alpha: 0.12);
+    &__stroke {
+      font-family: "ClashDisplay-Medium";
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 35px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    &__title {
+      font-family: "ClashDisplay-Medium";
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: 2px;
+    }
+    &__button {
+      margin-top: 28px;
+      background: $purple;
+      padding: 12px 16px;
+      border-radius: 4px;
+      border: none;
+      text-transform: uppercase;
+      color: $white;
+    }
+    &__category {
+      margin-top: 32px;
+      ul {
+        display: flex;
+      }
+      ul > li {
+        font-family: "ClashDisplay-Semibold";
+        padding: 4px 8px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 23px;
+        color: $gray;
+        border: 1px solid rgba($color: $white, $alpha: 0.12);
+      }
+    }
+  }
+  &-description {
+    margin-top: 40px;
+    &__name {
+      font-family: "ClashDisplay-Bold";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      color: $white;
+    }
+    &__description {
+      margin-top: 8px;
+      font-weight: 300;
+      font-family: "ClashDisplay-Light";
+      color: rgba($color: $white, $alpha: 0.7);
+      font-size: 18px;
+      line-height: 31px;
+    }
+  }
+  &-body {
+    margin-top: 40px;
+    &__name {
+      text-transform: uppercase;
+      color: $white;
+      font-family: 700;
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  &-tech {
+    &__name {
+      font-family: "ClashDisplay-Bold";
+      font-size: 20px;
+      line-height: 34px;
+      font-family: 700;
+    }
+    &__des {
+      font-family: "ClashDisplay-Light";
+      margin-top: 4px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 31px;
+      color: rgba($color: $white, $alpha: 0.7);
+    }
+    &__category {
+      margin-top: 8px;
+      ul {
+        display: flex;
+      }
+      ul > li {
+        font-family: "ClashDisplay-Semibold";
+        padding: 4px 8px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 23px;
+        color: $gray;
+        border: 1px solid rgba($color: $white, $alpha: 0.12);
+        margin-right: 4px;
+      }
+    }
+  }
+}

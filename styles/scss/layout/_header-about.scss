@@ -1,0 +1,32 @@
+.clsheaderwebabout {
+  &-content {
+    position: relative;
+    height: 210px;
+  }
+  &-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+    &__block {
+      margin-right: 80px;
+    }
+    &__title {
+      font-family: "ClashDisplay-Semibold";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 23px;
+      color: $gray;
+    }
+    &__subtitle {
+      margin-top: 8px;
+      font-family: "ClashDisplay-Semibold";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 23px;
+      color: $white;
+    }
+  }
+}

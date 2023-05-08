@@ -1,0 +1,9 @@
+.clsproductpreview {
+  flex-basis: 60%;
+  &-content {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

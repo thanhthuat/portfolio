@@ -1,0 +1,39 @@
+.clswebservice {
+  &-content {
+  }
+  &-title {
+    position: relative;
+    z-index: 100;
+    padding: 94px 0px 0px 167px;
+    margin-bottom: 88px;
+    h1 {
+      font-size: 160px;
+      line-height: 160px;
+      letter-spacing: 8px;
+      color: $white;
+    }
+    &__category {
+      display: flex;
+      p {
+      }
+    }
+    &__item {
+      color: $gray;
+      margin-right: 12px;
+      font-size: 16px;
+      line-height: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  }
+  &-stroke {
+    font-family: "ClashDisplay-Bold";
+    color: transparent;
+    -webkit-text-stroke: 1px $white;
+    font-size: 160px;
+    line-height: 160px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+}

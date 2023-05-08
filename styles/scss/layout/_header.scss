@@ -24,12 +24,12 @@
   }
   &-navbar {
     display: flex;
-
+    background: #000;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
     padding: 20px 60px;
   }
   &-link {
