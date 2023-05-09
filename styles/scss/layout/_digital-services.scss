@@ -67,18 +67,21 @@
     text-decoration: none;
   }
   &-title {
+    color: $white;
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 16px;
     font-weight: 700;
   }
   &-des {
+    color: $white;
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 32px;
     font-weight: 300;
   }
   &-more {
+    color: $white;
     display: inline-block;
     position: relative;
     font-weight: 500;

@@ -1,9 +1,11 @@
+import useCopyToClipboard from "@utils/hook.util";
 import React from "react";
 
 interface FormContactProps {
   affterSend: () => void;
 }
 const FormContact: React.FC<FormContactProps> = ({ affterSend }) => {
+  const [value, copy] = useCopyToClipboard();
   const onSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setTimeout(() => affterSend(), 100);
@@ -31,6 +33,7 @@ const FormContact: React.FC<FormContactProps> = ({ affterSend }) => {
           Submit
         </button>
       </form>
+      {/* <button onClick={() => copy("Thanh Thuat")}>Thanh thuat</button> */}
     </div>
   );
 };

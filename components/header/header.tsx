@@ -32,7 +32,7 @@ const HeaderPage = (props: Props) => {
             </li>
           </ul>
           <div className="clsheaderpage-button">
-            <Link href={"/get"}>GEt in touch</Link>{" "}
+            <Link href={"/contact"}>GEt in touch</Link>{" "}
           </div>
         </nav>
       </div>

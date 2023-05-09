@@ -6,24 +6,17 @@ type Props = {};
 const DigitalServicesItem = (props: Props) => {
   return (
     <div className="clsdigitalitem">
-      <Link href={"/service"}>
+      <Link href={"/services"}>
         <div className="clsdigitalitem-content">
-          <img
-            src="/image/logo-web.svg"
-            alt="logo-web"
-            className="clsdigitalitem-img"
-          />
+          <img src="/image/logo-web.svg" alt="logo-web" className="clsdigitalitem-img" />
           <h3 className="clsdigitalitem-title"> WEB</h3>
           <p className="clsdigitalitem-des">
-            Dolor magna eget est lorem ipsum dolor sit amet consectetur.
-            Bibendum est ultricies integer quis auctor elit sed. Odio morbi quis
-            commodo odio aenean
+            Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum est ultricies integer quis
+            auctor elit sed. Odio morbi quis commodo odio aenean
           </p>
-          <Link href={"/"}>
-            <p className="clsdigitalitem-more">Explore WEB Services </p>
-          </Link>
+
+          <p className="clsdigitalitem-more">Explore WEB Services </p>
         </div>
-        '{" "}
       </Link>
     </div>
   );

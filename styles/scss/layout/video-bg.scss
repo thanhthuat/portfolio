@@ -22,6 +22,16 @@
     width: 100%;
     max-width: 1920px;
     padding: 0px 160px;
+    @include res(1300px) {
+      top: 40%;
+      padding: 0px 60px;
+    }
+    @include res(600px) {
+      padding: 0px 20px;
+    }
+    @include res(350px) {
+      top: 30%;
+    }
     &__logo {
       img {
         width: 178px;
@@ -33,6 +43,24 @@
         font-size: 80px;
         line-height: 104px;
         letter-spacing: 5.2px;
+        @include res(1300px) {
+          font-size: 66px;
+        }
+        @include res(900px) {
+          font-size: 50px;
+        }
+        @include res(776px) {
+          font-size: 45px;
+          line-height: 60px;
+        }
+        @include res(600px) {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        @include res(350px) {
+          font-size: 30px;
+          line-height: 40px;
+        }
       }
     }
     &__stroke {
@@ -42,8 +70,27 @@
       font-size: 80px;
       line-height: 104px;
       letter-spacing: 5.2px;
+
       text-transform: uppercase;
       display: inline-block;
+      @include res(1300px) {
+        font-size: 66px;
+      }
+      @include res(900px) {
+        font-size: 50px;
+      }
+      @include res(776px) {
+        font-size: 45px;
+        line-height: 60px;
+      }
+      @include res(600px) {
+        font-size: 35px;
+        line-height: 40px;
+      }
+      @include res(350px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
     }
   }
   &-textcontent {

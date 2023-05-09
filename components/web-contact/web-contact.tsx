@@ -9,7 +9,7 @@ const WebContact = () => {
   };
   return (
     <section className="clswebcontact wapperlayout">
-      {sendSuccess ? (
+      {!sendSuccess ? (
         <div className="clswebcontact-content">
           <div className="clswebcontact-title">
             <h1 className="clswebcontact-title__title">
