@@ -1,5 +1,8 @@
 .clsvideobg {
   height: 920px;
+  @include res(1300px) {
+    height: 750px;
+  }
   position: relative;
   &-content {
     position: absolute;
@@ -11,6 +14,9 @@
     height: 920px;
     z-index: 10;
     object-fit: cover;
+    @include res(1300px) {
+      height: 750px;
+    }
   }
   &-text {
     position: absolute;
@@ -48,6 +54,7 @@
         }
         @include res(900px) {
           font-size: 50px;
+          line-height: 70px;
         }
         @include res(776px) {
           font-size: 45px;
