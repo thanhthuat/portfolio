@@ -1,0 +1,27 @@
+.clswebcontact {
+  padding: 150px 0px 160px 0px;
+  &-content {
+    display: flex;
+    width: 1360px;
+    margin: 0 auto;
+  }
+  &-title {
+    font-family: "ClashDisplay-Semibold";
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 125px;
+    letter-spacing: 6.5px;
+    color: $white;
+    text-transform: uppercase;
+    margin-right: auto;
+  }
+  h1 {
+    font-family: "ClashDisplay-Semibold";
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 125px;
+    letter-spacing: 6.5px;
+    color: $white;
+    text-transform: uppercase;
+  }
+}

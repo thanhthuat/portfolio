@@ -1,10 +1,12 @@
 $purple-primary: #5c43d2;
 $purple: #9747ff;
 $white: #fff;
+$white-primary: rgba(239, 239, 239, 1);
 $black-gradient: #090909;
 $black-gradient-primary: rgba(9, 9, 9, 0);
 $white-primary: rgba(255, 255, 255, 0.12);
 $gray: #c8c8c8;
+$blue : rgba(92, 67, 210, 1);
 @mixin res($width) {
   @media only screen and (max-width: $width) {
     @content;

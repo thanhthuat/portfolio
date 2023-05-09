@@ -1,0 +1,38 @@
+.clssuccesssendcontact {
+  padding: 156px 0px 257px 0px;
+  &-content {
+    width: 1600px;
+    margin: 0px auto;
+  }
+  &-title {
+    h1 {
+      font-family: "ClashDisplay-Medium";
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 104px;
+      letter-spacing: 5px;
+    }
+    &__stroke {
+      font-family: "ClashDisplay-Medium";
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      font-size: 80px;
+      line-height: 104px;
+      letter-spacing: 5px;
+    }
+  }
+  &-button {
+    margin-top: 41px;
+    &__back {
+      background: $blue;
+      width: 560px;
+      color: $white;
+      height: 37px;
+      padding: 12px 16px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+    }
+  }
+}

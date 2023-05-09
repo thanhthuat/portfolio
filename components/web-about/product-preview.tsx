@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img from "public/image/about/aboutproject.jpg.png";
+import img from "public/image/about/aboutproject.png";
 type Props = {};
 
 const ProductPreview = (props: Props) => {

@@ -10,9 +10,18 @@ const arr = [{ urlImg: img1 }, { urlImg: img2 }, { urlImg: img3 }];
 const OverViewAbout = () => {
   return (
     <div className="clsoverviewabout">
-      {arr.map((item) => {
-        return <Image src={item?.urlImg} alt="bg-img" />;
-      })}
+      <div className="clsoverviewabout-content">
+        <div className="clsoverviewabout-title">
+          <h3> RELATED SERVICE</h3>
+        </div>
+        {arr.map((item) => {
+          return (
+            <div className="clsoverviewabout-item">
+              <Image src={item?.urlImg} alt="bg-img" />{" "}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
