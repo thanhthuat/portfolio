@@ -1,11 +1,25 @@
 .clsdigitalservices {
- 
   padding: 140px 160px;
+  @include res(1500px) {
+    padding: 100px 60px;
+  }
+  @include res(768px) {
+    padding: 50px 20px;
+  }
+  @include res(400px) {
+    padding: 25px 10px;
+  }
   &-category {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     // grid-template-rows: 1fr 1fr 1fr;
     gap: 32px 32px;
+    @include res(768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include res(500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 .clsservicesheader {
@@ -19,6 +33,18 @@
   &-text {
     font-size: 80px;
     line-height: 88px;
+    @include res(1300px) {
+      font-size: 65px;
+      line-height: 75px;
+    }
+    @include res(900px) {
+      font-size: 40px;
+      line-height: 55px;
+    }
+    @include res(600px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
     &__stroke {
       font-family: "ClashDisplay-Bold";
       color: transparent;
@@ -28,6 +54,18 @@
       letter-spacing: 5.2px;
       text-transform: uppercase;
       display: inline-block;
+      @include res(1300px) {
+        font-size: 65px;
+        line-height: 88px;
+      }
+      @include res(900px) {
+        font-size: 40px;
+        line-height: 68px;
+      }
+      @include res(600px) {
+        font-size: 32px;
+        line-height: 50px;
+      }
     }
   }
   a {
@@ -41,10 +79,25 @@
       color: $white;
       font-size: 20px;
       line-height: 20px;
+      @include res(600px) {
+        font-family: "ClashDisplay-Regular";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+      }
+      @include res(450px) {
+        display: none;
+      }
     }
     &__img {
       max-width: 60px;
       height: auto;
+      @include res(1300px) {
+        max-width: 50px;
+      }
+      @include res(900px) {
+        max-width: 45px;
+      }
     }
   }
 }
@@ -56,12 +109,28 @@
     padding: 53px;
     display: flex;
     flex-direction: column;
+    @include res(1900px) {
+      padding: 20px;
+    }
+    @include res(1024px) {
+      padding: 10px 15px 15px;
+    }
   }
   &-img {
     max-width: 55px;
     margin-bottom: 39px;
     width: 100%;
     height: auto;
+    @include res(1600px) {
+      margin-bottom: 35px;
+    }
+    @include res(1200px) {
+      margin-bottom: 28px;
+    }
+    @include res(1024px) {
+      margin-bottom: 14px;
+      max-width: 44px;
+    }
   }
   a {
     text-decoration: none;
@@ -72,13 +141,35 @@
     line-height: 34px;
     margin-bottom: 16px;
     font-weight: 700;
+    @include res(1200px) {
+      margin-bottom: 10px;
+    }
+    @include res(1024px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &-des {
+    font-family: "ClashDisplay-Light";
     color: $white;
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 32px;
     font-weight: 300;
+    @include displayText(4);
+    @include res(1200px) {
+      margin-bottom: 20px;
+    }
+    @include res(1024px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    @include res(900px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 14px;
+    }
   }
   &-more {
     color: $white;

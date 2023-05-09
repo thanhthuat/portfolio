@@ -12,27 +12,87 @@
     top: 80%;
     left: 5%;
     z-index: 10;
+    @include res(1310px) {
+      top: 75%;
+    }
+    @include res(960px) {
+      top: 72%;
+    }
+    @include res(600px) {
+      top: 75%;
+    }
+    @include res(500px) {
+      top: 70%;
+    }
+    @include res(350px) {
+      top: 70%;
+    }
     h3 {
-      font-weight: 700;
+      font-family: "ClashDisplay-Medium";
+      letter-spacing: 2px;
+      font-weight: 500;
       font-size: 24px;
       line-height: 34px;
       color: $white;
+      @include res(1310px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      @include res(960px) {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      @include res(760px) {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
+      @include res(600px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      @include res(350px) {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
     }
     p {
-      font-weight: 500;
+      font-family: "ClashDisplay-Regular";
+      font-weight: 400;
       font-size: 13px;
       line-height: 13px;
       letter-spacing: 10%;
       color: $white;
+      @include res(960px) {
+        font-size: 12px;
+      }
+      @include res(760px) {
+        font-size: 12px;
+      }
     }
   }
 }
 .clscategoryproject {
   padding: 0px 60px;
+  @include res(768px) {
+    padding: 0px 20px;
+  }
+  @include res(400px) {
+    padding: 0px 10px;
+  }
   &-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: 1fr 1fr 1fr;
     gap: 32px 32px;
+    @include res(768px) {
+      gap: 20px 20px;
+    }
+    @include res(600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include res(400px) {
+      gap: 10px 20px;
+    }
   }
 }

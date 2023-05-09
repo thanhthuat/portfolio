@@ -31,7 +31,7 @@ function FooterPage({}: Props) {
               <Link href={"/contact"}>services</Link>
             </li>
             <li>
-              <Link href={"/contact"}>services</Link>
+              <Link href={"/contact"}>About</Link>
             </li>
             <li>
               <Link href={"/contact"}>Contact</Link>

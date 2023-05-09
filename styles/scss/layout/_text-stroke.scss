@@ -1,5 +1,8 @@
 .clstextstroke {
   padding-bottom: 75px;
+  @include res(768px) {
+    padding-bottom: 45px;
+  }
   display: flex;
   justify-content: center;
   &-content {
@@ -20,9 +23,52 @@
     text-overflow: clip;
     .mr-45 {
       margin-right: 45px;
+      @include res(768px) {
+        margin-right: 25px;
+      }
+      @include res(500px) {
+        margin-right: 15px;
+      }
     }
     .ml-45 {
       margin-left: 45px;
+      @include res(768px) {
+        margin-left: 25px;
+      }
+      @include res(500px) {
+        margin-left: 15px;
+      }
+    }
+    @include res(1600px) {
+      font-size: 80px;
+      line-height: 95px;
+    }
+    @include res(1400px) {
+      font-size: 70px;
+      line-height: 90px;
+    }
+    @include res(1200px) {
+      font-size: 50px;
+      line-height: 70px;
+    }
+    @include res(900px) {
+      font-size: 42px;
+      line-height: 60px;
+    }
+    @include res(768px) {
+      font-size: 30px;
+      line-height: 45px;
+      letter-spacing: 4px;
+    }
+    @include res(600px) {
+      font-size: 25px;
+      line-height: 35px;
+      letter-spacing: 4px;
+    }
+    @include res(500px) {
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 4px;
     }
     &__stroke {
       font-family: "ClashDisplay-Bold";
@@ -33,6 +79,37 @@
       letter-spacing: 5.5px;
       text-transform: uppercase;
       display: inline-block;
+      @include res(1600px) {
+        font-size: 80px;
+        line-height: 95px;
+      }
+      @include res(1400px) {
+        font-size: 70px;
+        line-height: 90px;
+      }
+      @include res(1200px) {
+        font-size: 50px;
+        line-height: 70px;
+      }
+      @include res(900px) {
+        font-size: 42px;
+        line-height: 60px;
+      }
+      @include res(768px) {
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 4px;
+      }
+      @include res(600px) {
+        font-size: 25px;
+        line-height: 35px;
+        letter-spacing: 4px;
+      }
+      @include res(500px) {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 4px;
+      }
     }
   }
 }

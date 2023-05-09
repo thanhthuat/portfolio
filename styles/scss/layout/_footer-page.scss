@@ -1,18 +1,37 @@
 .clsfooterpage {
   padding: 0px 60px;
+  @include res(768px) {
+    padding: 0px 20px;
+  }
+
   border-top: 1px solid rgba(255, 255, 255, 0.12);
- 
+
   &-content {
     display: flex;
     padding: 64px 0px;
+    @include res(768px) {
+      padding: 40px 0px;
+    }
+    @include res(520px) {
+      flex-direction: column;
+    }
   }
   &-social {
     flex-basis: 35%;
-   
-    .logo{
-        max-width: 178px;
-        height: auto;
-        width: 100%;
+    @include res(768px) {
+      min-width: 200px;
+    }
+    @include res(520px) {
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .logo {
+      max-width: 178px;
+      height: auto;
+      width: 100%;
+      @include res(768px) {
+        max-width: 125px;
+      }
     }
     .icon {
       width: 50px;
@@ -22,17 +41,27 @@
       justify-content: center;
       border-radius: 50%;
       border: 1px solid rgba(255, 255, 255, 0.12);
+      @include res(768px) {
+        width: 40px;
+        height: 40px;
+      }
     }
     .mr-8 {
       margin-right: 8px;
     }
   }
-  &-connect{
-     margin-top: 48px;
+  &-connect {
+    margin-top: 48px;
+    @include res(768px) {
+      margin-top: 20px;
+    }
   }
   &-page {
     color: $white;
     flex-basis: 50%;
+    @include res(960px) {
+      flex-basis: 65%;
+    }
   }
   &-title {
     font-weight: 500;
@@ -59,12 +88,19 @@
     display: flex;
     justify-content: space-between;
     padding: 32px 0px;
+    align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
+    @include res(520px) {
+      flex-direction: column-reverse;
+    }
     p {
       color: $white;
     }
     &__privacy {
       display: flex;
+      @include res(520px) {
+        margin-bottom: 15px;
+      }
       p:first-child {
         margin-right: 32px;
       }

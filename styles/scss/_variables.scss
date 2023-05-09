@@ -18,3 +18,12 @@ $blue : rgba(92, 67, 210, 1);
     @content;
   }
 }
+
+
+@mixin displayText($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -3,12 +3,24 @@
   justify-content: center;
   margin-top: 100px;
   padding: 160px 0px;
+  @include res(960px) {
+    padding: 90px 0px 90px 0px;
+    margin-top: 50px;
+  }
+  @include res(768px) {
+    padding: 70px 0px 90px 0px;
+    margin-top: 0px;
+  }
   &-content {
     max-width: 1400px;
     position: relative;
     text-align: center;
   }
   &-header {
+    margin-bottom: 32px;
+    @include res(600px) {
+      margin-bottom: 25px;
+    }
     &__title {
       font-weight: 500;
       font-size: 13px;
@@ -21,24 +33,68 @@
     &__title {
       font-weight: 600;
       font-size: 128px;
-      line-height: 141px;
+      line-height: 60px;
       letter-spacing: 7.5px;
       color: $white;
+      @include res(1300px) {
+        font-size: 100px;
+      }
+      @include res(960px) {
+        font-size: 90px;
+      }
+      @include res(768px) {
+        font-size: 80px;
+        line-height: 40px;
+      }
+      @include res(600px) {
+        font-size: 60px;
+        line-height: 30px;
+      }
+      @include res(500px) {
+        font-size: 40px;
+        line-height: 20px;
+      }
+      @include res(400px) {
+        font-size: 34px;
+        line-height: 17px;
+      }
     }
     &__title1 {
-     font-family: 'ClashDisplay-Bold';
+      font-family: "ClashDisplay-Bold";
       color: transparent;
       -webkit-text-stroke: 1px whitesmoke;
       font-size: 128px;
-      line-height: 141px;
+      line-height: 60px;
       letter-spacing: 7.5px;
       text-transform: uppercase;
+      @include res(1300px) {
+        font-size: 100px;
+      }
+      @include res(960px) {
+        font-size: 90px;
+      }
+      @include res(768px) {
+        font-size: 80px;
+        line-height: 40px;
+      }
+      @include res(600px) {
+        font-size: 60px;
+        line-height: 30px;
+      }
+      @include res(500px) {
+        font-size: 40px;
+        line-height: 20px;
+      }
+      @include res(400px) {
+        font-size: 34px;
+        line-height: 17px;
+      }
     }
   }
   &-bg {
     background: $purple;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,8 +113,12 @@
       font-size: 13px;
       text-transform: uppercase;
       line-height: 13px;
-      letter-spacing: 10%;
+      letter-spacing: 1.3px;
       border: none;
+      @include res(500px) {
+        font-size: 12px;
+        padding: 10px 14px;
+      }
     }
   }
 }
