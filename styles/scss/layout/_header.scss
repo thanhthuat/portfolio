@@ -19,6 +19,18 @@
       );
     }
   }
+  &-content.nobg {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0px;
+      height: 0px;
+      z-index: 0;
+      background: none;
+    }
+  }
   &-logo {
     margin-right: auto;
   }

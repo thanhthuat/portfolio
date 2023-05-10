@@ -6,6 +6,9 @@
   @include res(1024px) {
     flex-basis: 50%;
   }
+   @include res(900px) {
+    flex-basis: 60%;
+  }
   &-content {
     img {
       width: 100%;

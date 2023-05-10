@@ -1,6 +1,14 @@
 .clsoverviewabout {
   &-content {
     margin-top: 18px;
+    @include res(768px) {
+      margin-top: 50px;
+    }
+    @include res(600px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   &-title {
     margin-bottom: 8px;
@@ -13,5 +21,9 @@
   }
   &-item {
     margin-top: 18px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }

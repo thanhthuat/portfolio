@@ -10,12 +10,16 @@ import React from "react";
 
 interface MainLayoutProps {
   children?: React.ReactNode;
+  className?: string;
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({
+  children,
+  className = "",
+}) => {
   return (
     <div>
-      <HeaderPage />
+      <HeaderPage className={className} />
       <main>{children}</main>
       <FooterPage />
     </div>

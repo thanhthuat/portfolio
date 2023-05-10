@@ -5,8 +5,8 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <MainLayout>
-        <WebAbout/>
+    <MainLayout className="nobg">
+      <WebAbout />
       <Contact />
     </MainLayout>
   );

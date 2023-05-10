@@ -1,16 +1,78 @@
 .clssuccesssendcontact {
-  padding: 156px 0px 257px 0px;
+  padding: 156px 60px 257px 60px;
+  @include res(1600px) {
+    padding: 30px 60px 150px 60px;
+  }
+  @include res(1200px) {
+    padding: 10px 60px 50px 60px;
+  }
+  @include res(768px) {
+    padding: 20px;
+  }
+  @include res(400px) {
+    padding: 10px;
+  }
   &-content {
     width: 1600px;
     margin: 0px auto;
+    @include res(1700px) {
+      width: 100%;
+    }
   }
+
+  &-logo {
+    img {
+      @include res(500px) {
+        width: 100px;
+      }
+    }
+  }
+  
   &-title {
+    @include res(500px) {
+      margin-top: 10px;
+    }
     h1 {
       font-family: "ClashDisplay-Medium";
       font-weight: 500;
       font-size: 80px;
       line-height: 104px;
       letter-spacing: 5px;
+      @include res(1700px) {
+        font-size: 76px;
+        letter-spacing: 4px;
+      }
+      @include res(1650px) {
+        font-size: 74px;
+        letter-spacing: 4px;
+      }
+      @include res(1600px) {
+        font-size: 70px;
+      }
+      @include res(1530px) {
+        font-size: 65px;
+        line-height: 92px;
+      }
+      @include res(1430px) {
+        font-size: 60px;
+        line-height: 88px;
+      }
+      @include res(1340px) {
+        font-size: 50px;
+        line-height: 78px;
+      }
+      @include res(768px) {
+        font-size: 40px;
+        line-height: 60px;
+      }
+      @include res(500px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      @include res(400px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
     &__stroke {
       font-family: "ClashDisplay-Medium";
@@ -19,10 +81,33 @@
       font-size: 80px;
       line-height: 104px;
       letter-spacing: 5px;
+      @include res(1530px) {
+        font-size: 70px;
+        line-height: 92px;
+      }
+      @include res(1340px) {
+        font-size: 50px;
+        line-height: 78px;
+      }
+      @include res(768px) {
+        font-size: 40px;
+        line-height: 60px;
+      }
+      @include res(500px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      @include res(400px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
   }
   &-button {
     margin-top: 41px;
+    @include res(500px) {
+      margin-top: 20px;
+    }
     &__back {
       background: $blue;
       width: 560px;
@@ -33,6 +118,12 @@
       text-transform: uppercase;
       text-decoration: none;
       border: none;
+      @include res(768px) {
+        width: 360px;
+      }
+      @include res(500px) {
+        width: 70%;
+      }
     }
   }
 }

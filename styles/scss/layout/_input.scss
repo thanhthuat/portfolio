@@ -8,6 +8,9 @@
     font-weight: 400;
     font-family: "ClashDisplay-Regular";
     color: $white;
+    @include res(900px) {
+      font-size: 17px;
+    }
   }
   &-input {
     margin-top: 8px;
@@ -26,6 +29,9 @@
       /* Edge */
       color: $white-primary;
     }
+    @include res(600px) {
+      height: 42px;
+    }
   }
   &-textarea {
     margin-top: 8px;
@@ -37,6 +43,9 @@
     resize: none;
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: transparent;
+     @include res(600px) {
+      height: 100px;
+    }
     &:focus-visible {
       border: none;
       outline: 1px solid rgba(255, 255, 255, 0.3);

@@ -8,6 +8,19 @@
   @include res(1024px) {
     flex-basis: 50%;
   }
+  @include res(900px) {
+    flex-basis: 40%;
+    width: 45%;
+    padding-right: 20px;
+  }
+  @include res(600px) {
+    flex-basis: 100%;
+    width: 100%;
+    padding-right: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba($color: $white, $alpha: 0.12);
+  }
   &-content {
   }
   &-header {
@@ -27,6 +40,14 @@
         line-height: 30px;
         margin-bottom: 5px;
       }
+      @include res(900px) {
+        font-size: 26px;
+        margin-bottom: 8px;
+      }
+      @include res(768px) {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
     }
     &__title {
       font-family: "ClashDisplay-Medium";
@@ -38,6 +59,14 @@
         font-size: 35px;
         line-height: 40px;
       }
+      @include res(900px) {
+        font-size: 26px;
+        line-height: 35px;
+      }
+      @include res(768px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
     &__button {
       margin-top: 28px;
@@ -47,11 +76,21 @@
       border: none;
       text-transform: uppercase;
       color: $white;
+      @include res(900px) {
+        font-size: 12px;
+      }
+      @include res(768px) {
+        margin-top: 20px;
+      }
     }
     &__category {
       margin-top: 32px;
+      @include res(768px) {
+        margin-top: 15px;
+      }
       ul {
         display: flex;
+        flex-wrap: wrap;
       }
       ul > li {
         font-family: "Syne", sans-serif;
@@ -67,17 +106,31 @@
           font-size: 14px;
           line-height: 20px;
         }
+        @include res(768px) {
+          margin-top: 5px;
+        }
       }
     }
   }
   &-description {
     margin-top: 40px;
+    @include res(768px) {
+      margin-top: 15px;
+    }
     &__name {
       font-family: "Syne", sans-serif;
       font-weight: 700;
       font-size: 24px;
       line-height: 34px;
       color: $white;
+      @include res(1024px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+      @include res(768px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
     }
     &__description {
       margin-top: 8px;
@@ -86,16 +139,29 @@
       color: rgba($color: $white, $alpha: 0.7);
       font-size: 18px;
       line-height: 31px;
+      @include res(768px) {
+        font-size: 14px;
+        line-height: 25px;
+      }
     }
   }
   &-body {
     margin-top: 40px;
     &__name {
+      font-family: "Syne", sans-serif;
       text-transform: uppercase;
       color: $white;
-      font-family: 700;
+      font-weight: 700;
       font-size: 24px;
       line-height: 34px;
+      @include res(1024px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+      @include res(768px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
     }
   }
   &-tech {
@@ -103,7 +169,7 @@
       font-family: "Syne", sans-serif;
       font-size: 20px;
       line-height: 34px;
-      font-family: 700;
+      font-weight: 700;
     }
     &__des {
       font-family: "ClashDisplay-Light";

@@ -3,12 +3,14 @@ import Link from "next/link";
 import React from "react";
 import logo from "public/image/logo.svg";
 
-type Props = {};
+interface HeaderPageProps {
+  className?: string;
+}
 
-const HeaderPage = (props: Props) => {
+const HeaderPage: React.FC<HeaderPageProps> = ({ className = "" }) => {
   return (
     <div className="clsheaderpage">
-      <div className="clsheaderpage-content">
+      <div className={`${className}  clsheaderpage-content`}>
         <nav className="clsheaderpage-navbar wapperlayout">
           <div className="clsheaderpage-logo">
             <Link href={"/"}>

@@ -9,9 +9,35 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 611px;
+    gap: 32px 80px;
+
+    @include res(715px) {
+      padding: 0px 20px;
+      width: 100%;
+    }
+    @include res(660px) {
+      padding: 0px 20px;
+      gap: 32px 60px;
+    }
+    @include res(600px) {
+      padding: 0px 20px;
+      gap: 32px 30px;
+    }
+    @include res(511px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include res(400px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     &__block {
-      margin-right: 80px;
+      @include res(400px) {
+      &:nth-child(2n){
+        text-align: center;
+      }
+    }
     }
     &__title {
       font-family: "ClashDisplay-Semibold";

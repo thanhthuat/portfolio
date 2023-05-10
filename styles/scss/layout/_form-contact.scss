@@ -1,5 +1,13 @@
 .clsformcontact {
-  flex-basis: 50%;
+  flex-grow: 1;
+  @include res(1300px) {
+    flex-basis: 40%;
+    flex-grow: 0;
+  }
+  @include res(700px) {
+    flex-basis: 50%;
+    flex-grow: 0;
+  }
   &-button {
     text-align: center;
     margin-top: 40px;

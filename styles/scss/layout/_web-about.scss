@@ -8,5 +8,11 @@
     @include res(1460px) {
       width: 100%;
     }
+    @include res(768px) {
+      padding: 0px 20px;
+    }
+    @include res(600px) {
+      flex-direction: column-reverse;
+    }
   }
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactPage = () => {
   return (
-    <MainLayout>
+    <MainLayout className="nobg">
       <WebContact />
     </MainLayout>
   );
