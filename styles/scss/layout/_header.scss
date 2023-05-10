@@ -13,10 +13,7 @@
       width: 100%;
       height: 485px;
       z-index: 99;
-      background: linear-gradient(
-        $black-gradient 0%,
-        $black-gradient-primary 100%
-      );
+      background: linear-gradient($black-gradient 0%, $black-gradient-primary 100%);
     }
   }
   &-content.nobg {
@@ -37,7 +34,7 @@
   &-navbar {
     display: flex;
     background: #000;
-    align-items: center;
+    align-items: flex-end;
     position: fixed;
     top: 0;
     width: 100%;
@@ -91,7 +88,66 @@
     align-items: center;
     // margin-right: 240px;
     @include res(1024px) {
-      margin-right: auto;
+    }
+
+    li > a {
+      font-size: 13px;
+      line-height: 13px;
+      letter-spacing: 1.3px;
+      color: $white;
+      text-decoration: none;
+      position: relative;
+      &:hover::after {
+        width: 100%;
+        transition: width 0.5s ease;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: $purple;
+        width: 0%;
+        height: 2px;
+      }
+      @include res(768px) {
+        font-size: 20px;
+      }
+    }
+    &__item.active {
+      a {
+        // color: $purple;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: $purple;
+          width: 100%;
+          height: 2px;
+        }
+      }
+    }
+    &__item {
+      margin-right: 32px;
+      &:nth-child(3) {
+        margin-right: 240px;
+      }
+      @include res(1024px) {
+        &:nth-child(3) {
+          margin-right: 32px;
+        }
+      }
+      @include res(768px) {
+        margin-right: 0px;
+        padding: 30px;
+
+        &:nth-child(3) {
+          margin-right: 0px;
+        }
+      }
     }
     @include res(768px) {
       display: flex;
@@ -104,26 +160,12 @@
       opacity: 1;
       transition: all 0.5s ease;
       &.active {
-        background: #6668f4;
+        background: rgba(0, 0, 0, 0.7);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
       }
-    }
-
-    li > a {
-      font-size: 13px;
-      line-height: 13px;
-      letter-spacing: 10%;
-      color: $white;
-      text-decoration: none;
-    }
-    &__item {
-      margin-right: 32px;
-    }
-    &__item:first-child() {
-     margin-right: 240px
     }
   }
   &-button {
