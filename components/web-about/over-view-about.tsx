@@ -5,7 +5,6 @@ import img2 from "public/image/about/Image (8).png";
 import img3 from "public/image/about/Image (9).png";
 import Image from "next/image";
 
-
 const arr = [{ urlImg: img1 }, { urlImg: img2 }, { urlImg: img3 }];
 const OverViewAbout = () => {
   return (
@@ -14,9 +13,9 @@ const OverViewAbout = () => {
         <div className="clsoverviewabout-title">
           <h3> RELATED SERVICE</h3>
         </div>
-        {arr.map((item) => {
+        {arr.map((item, index) => {
           return (
-            <div className="clsoverviewabout-item">
+            <div className="clsoverviewabout-item" key={index}>
               <Image src={item?.urlImg} alt="bg-img" />{" "}
             </div>
           );
