@@ -1,5 +1,11 @@
 .clsproductpreview {
   flex-basis: 60%;
+  @include res(1300px) {
+    flex-basis: 55%;
+  }
+  @include res(1024px) {
+    flex-basis: 50%;
+  }
   &-content {
     img {
       width: 100%;

@@ -6,14 +6,56 @@
     z-index: 100;
     padding: 94px 0px 0px 167px;
     margin-bottom: 88px;
+    @include res(1300px) {
+      padding: 94px 0px 0px 100px;
+    }
+    @include res(768px) {
+      padding: 70px 0px 0px 60px;
+    }
+    @include res(450px) {
+      padding: 20px 0px 0px 10px;
+    }
     h1 {
       font-size: 160px;
       line-height: 160px;
       letter-spacing: 8px;
       color: $white;
+      @include res(1600px) {
+        font-size: 140px;
+        line-height: 140px;
+        letter-spacing: 7px;
+      }
+      @include res(1300px) {
+        font-size: 110px;
+        line-height: 110px;
+        letter-spacing: 6px;
+      }
+      @include res(1200px) {
+        font-size: 90px;
+        line-height: 90px;
+        letter-spacing: 5px;
+      }
+      @include res(900px) {
+        font-size: 70px;
+        line-height: 70px;
+        letter-spacing: 5px;
+      }
+      @include res(768px) {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: 5px;
+      }
+       @include res(450px) {
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: 4px;
+      }
     }
     &__category {
       display: flex;
+      @include res(768px) {
+        margin-top: 10px;
+      }
       p {
       }
     }
@@ -25,6 +67,10 @@
       border: 1px solid rgba(255, 255, 255, 0.12);
       padding: 4px 8px;
       border-radius: 4px;
+      @include res(768px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
   }
   &-stroke {
@@ -35,5 +81,35 @@
     line-height: 160px;
     letter-spacing: 8px;
     text-transform: uppercase;
+    @include res(1600px) {
+      font-size: 140px;
+      line-height: 140px;
+      letter-spacing: 7px;
+    }
+    @include res(1300px) {
+      font-size: 110px;
+      line-height: 110px;
+      letter-spacing: 6px;
+    }
+    @include res(1200px) {
+      font-size: 90px;
+      line-height: 90px;
+      letter-spacing: 5px;
+    }
+    @include res(900px) {
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: 5px;
+    }
+    @include res(768px) {
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: 5px;
+    }
+    @include res(450px) {
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: 4px;
+      }
   }
 }

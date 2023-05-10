@@ -2,6 +2,12 @@
   color: $white;
   flex-basis: 40%;
   padding-right: 32px;
+  @include res(1300px) {
+    flex-basis: 45%;
+  }
+  @include res(1024px) {
+    flex-basis: 50%;
+  }
   &-content {
   }
   &-header {
@@ -16,6 +22,11 @@
       line-height: 35px;
       letter-spacing: 2px;
       text-transform: uppercase;
+      @include res(1024px) {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
     }
     &__title {
       font-family: "ClashDisplay-Medium";
@@ -23,6 +34,10 @@
       font-size: 40px;
       line-height: 44px;
       letter-spacing: 2px;
+      @include res(1024px) {
+        font-size: 35px;
+        line-height: 40px;
+      }
     }
     &__button {
       margin-top: 28px;
@@ -39,20 +54,26 @@
         display: flex;
       }
       ul > li {
-        font-family: "ClashDisplay-Semibold";
+        font-family: "Syne", sans-serif;
         padding: 4px 8px;
         font-weight: 600;
         font-size: 16px;
         line-height: 23px;
         color: $gray;
         border: 1px solid rgba($color: $white, $alpha: 0.12);
+        list-style: none;
+        margin-right: 8px;
+        @include res(1024px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }
   &-description {
     margin-top: 40px;
     &__name {
-      font-family: "ClashDisplay-Bold";
+      font-family: "Syne", sans-serif;
       font-weight: 700;
       font-size: 24px;
       line-height: 34px;
@@ -79,7 +100,7 @@
   }
   &-tech {
     &__name {
-      font-family: "ClashDisplay-Bold";
+      font-family: "Syne", sans-serif;
       font-size: 20px;
       line-height: 34px;
       font-family: 700;
@@ -98,7 +119,7 @@
         display: flex;
       }
       ul > li {
-        font-family: "ClashDisplay-Semibold";
+        font-family: "Syne", sans-serif;
         padding: 4px 8px;
         font-weight: 600;
         font-size: 16px;
@@ -106,6 +127,11 @@
         color: $gray;
         border: 1px solid rgba($color: $white, $alpha: 0.12);
         margin-right: 4px;
+        list-style: none;
+        @include res(1024px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }

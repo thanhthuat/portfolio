@@ -1,3 +1,13 @@
 .clspreviewimg {
   padding: 16px 60px;
+  @include res(768px){
+    padding: 16px 20px;
+  }
+   @include res(400px){
+    padding: 5px 10px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

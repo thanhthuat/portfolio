@@ -1,8 +1,12 @@
 .clswebabout {
   &-content {
-    width: 1320px;
+    width: 1440px;
     margin: 0px auto;
     display: flex;
     margin-top: 60px;
+    padding: 0px 60px;
+    @include res(1460px) {
+      width: 100%;
+    }
   }
 }

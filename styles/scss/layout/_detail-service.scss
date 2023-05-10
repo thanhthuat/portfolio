@@ -1,8 +1,23 @@
 .clsdetailservice {
   margin: 150px 0px 164px 0px;
   padding: 0px 164px;
+  @include res(1300px) {
+    padding: 0px 94px;
+  }
+  @include res(1200px) {
+    padding: 0px 60px;
+  }
+  @include res(900px) {
+    margin: 100px 0px;
+  }
+  @include res(768px) {
+    padding: 0px 20px;
+  }
   &-content {
     display: flex;
+    @include res(600px) {
+      flex-direction: column;
+    }
   }
   &-blockleft {
     flex-basis: 40%;
@@ -11,6 +26,18 @@
         font-size: 64px;
         line-height: 70px;
         color: $white;
+        @include res(1300px) {
+          font-size: 60px;
+          line-height: 85px;
+        }
+        @include res(900px) {
+          font-size: 50px;
+          line-height: 60px;
+        }
+        @include res(600px) {
+          font-size: 45px;
+          line-height: 50px;
+        }
       }
     }
     &__stroke {
@@ -25,6 +52,16 @@
       list-style: none;
       margin-top: 12px;
     }
+    @include res(600px) {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      ul > li {
+        margin-right: 10px;
+      }
+    }
   }
 
   &-blockright {
@@ -34,6 +71,22 @@
       line-height: 62px;
       letter-spacing: 3.2px;
       color: $white;
+      @include res(1300px) {
+        font-size: 42px;
+        line-height: 55px;
+      }
+      @include res(900px) {
+        font-size: 27px;
+        line-height: 39px;
+      }
+      @include res(768px) {
+        font-size: 25px;
+        line-height: 39px;
+      }
+      @include res(600px) {
+        font-size: 25px;
+        line-height: 29px;
+      }
     }
     &__des {
       margin-top: 32px;
@@ -41,9 +94,18 @@
       font-weight: 300;
       font-size: 18px;
       line-height: 31px;
+      @include res(1300px) {
+        @include displayText(10);
+      }
+      @include res(900px) {
+        @include displayText(7);
+      }
     }
     &__img {
       margin-top: 73px;
+      @include res(768px) {
+        margin-top: 40px;
+      }
       img {
         width: 100%;
         height: auto;

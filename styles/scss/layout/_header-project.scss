@@ -3,6 +3,9 @@
     height: 396px;
     width: 100%;
     position: relative;
+    @include res(600px) {
+      height: 250px;
+    }
   }
   &-title {
     position: absolute;
@@ -10,6 +13,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
+    @include res(900px) {
+      min-width: 430px;
+    }
+    @include res(450px) {
+      min-width: unset;
+      width: 90%;
+    }
     h1 {
       font-family: "ClashDisplay-Medium";
       font-weight: 500;
@@ -17,6 +27,27 @@
       line-height: 128px;
       letter-spacing: 7px;
       color: $white;
+      text-align: center;
+      @include res(1600px) {
+        font-size: 120px;
+        line-height: 120px;
+      }
+      @include res(1300px) {
+        font-size: 105px;
+        line-height: 105px;
+      }
+      @include res(900px) {
+        font-size: 90px;
+        line-height: 90px;
+      }
+      @include res(768px) {
+        font-size: 70px;
+        line-height: 70px;
+      }
+      @include res(600px) {
+        font-size: 50px;
+        line-height: 50px;
+      }
     }
   }
   &-category {
@@ -38,6 +69,12 @@
       border: 1px solid rgba(255, 255, 255, 0.12);
       padding: 4px 8px;
       border-radius: 4px;
+      @include res(600px) {
+        font-family: "ClashDisplay-Light";
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 18px;
+      }
     }
   }
 }

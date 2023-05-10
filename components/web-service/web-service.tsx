@@ -33,7 +33,7 @@ const arr = [
   {
     title: {
       titleStroke: "WEB",
-      title: "DEVELOPMENT",
+      title: "SERVICE",
     },
     category: ["Front end ", "Backend", "CSS", "Html"],
     subTitle:

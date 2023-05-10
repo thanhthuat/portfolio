@@ -1,10 +1,10 @@
 import React from "react";
 import HeaderWebProject from "./header-web-project";
 import PreviewImg from "./preview-img";
-import img1 from "public/image/page-project/Image Wrapper.png";
-import img2 from "public/image/page-project/Image Wrapper (1).png";
-import img3 from "public/image/page-project/Image Wrapper (2).png";
-import img4 from "public/image/page-project/Image Wrapper (3).png";
+import img1 from "public/image/page-project/Image Wrapper1.png";
+import img2 from "public/image/page-project/Image Wrapper2.png";
+import img3 from "public/image/page-project/Image Wrapper3.png";
+import img4 from "public/image/page-project/Image Wrapper4.png";
 
 type Props = {};
 const arr = [

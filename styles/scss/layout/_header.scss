@@ -31,6 +31,9 @@
     width: 100%;
     z-index: 9999;
     padding: 20px 60px;
+    @include res(768px) {
+      padding: 20px;
+    }
   }
   &-link {
     display: flex;
