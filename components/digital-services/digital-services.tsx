@@ -4,17 +4,23 @@ import DigitalServicesItem from "./digital-services-item";
 
 interface DigitalServicesProps {}
 
+const arr = [
+  { item: "WEB" },
+  { item: "MARKETING DESIGN" },
+  { item: "PACKETGING SERVICES" },
+  { item: "APP" },
+  { item: "GAME" },
+  { item: "BRANDING DESIGN " },
+];
 const DigitalServices: React.FC<DigitalServicesProps> = () => {
   return (
     <section className="clsdigitalservices wapperlayout">
       <div className="clsdigitalservices-content">
         <DigitalServicesHeader />
         <div className="clsdigitalservices-category">
-          {Array(6)
-            .fill(null)
-            .map((item, index) => {
-              return <DigitalServicesItem key={index} />;
-            })}
+          {arr.map((item, index) => {
+            return <DigitalServicesItem key={index} item={item.item} />;
+          })}
         </div>
       </div>
     </section>

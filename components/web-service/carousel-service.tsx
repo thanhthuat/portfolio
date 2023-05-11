@@ -13,11 +13,9 @@ const arr = [
   { url: "/image/category-project/Image (2).png", alt: "123" },
   { url: "/image/category-project/Image (3).png", alt: "1234" },
   { url: "/image/category-project/Image (4).png", alt: "1235" },
-  { url: "/image/category-project/Image (5).png", alt: "1236" },
   { url: "/image/category-project/Image (2).png", alt: "123" },
   { url: "/image/category-project/Image (3).png", alt: "1234" },
   { url: "/image/category-project/Image (4).png", alt: "1235" },
-  { url: "/image/category-project/Image (5).png", alt: "1236" },
   { url: "/image/category-project/Image (2).png", alt: "123" },
 ];
 const CarouselService = (props: Props) => {

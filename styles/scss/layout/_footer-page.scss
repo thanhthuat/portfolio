@@ -81,7 +81,21 @@
       font-size: 13px;
       line-height: 13px;
       letter-spacing: 1.3px;
+       position: relative;
       color: rgba(255, 255, 255, 0.7);
+      &:hover::after {
+        width: 100%;
+        transition: width 0.5s ease;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: $purple;
+        width: 0%;
+        height: 2px;
+      }
     }
   }
   &-coppyright {

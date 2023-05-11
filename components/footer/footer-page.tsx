@@ -25,13 +25,13 @@ function FooterPage({}: Props) {
           <p className="clsfooterpage-title">Page</p>
           <ul className="clsfooterpage-category">
             <li>
-              <Link href={"/contact"}> Home</Link>
+              <Link href={"/"}> Home</Link>
             </li>
             <li>
-              <Link href={"/contact"}>services</Link>
+              <Link href={"/services"}>services</Link>
             </li>
             <li>
-              <Link href={"/contact"}>About</Link>
+              <Link href={"/about"}>About</Link>
             </li>
             <li>
               <Link href={"/contact"}>Contact</Link>
