@@ -13,7 +13,7 @@ const ProductDescription = (props: Props) => {
           <p className="clsproductdescription-header__title">
             (주)해솔종합건축사무소 반응형 홈페이지
           </p>
-          <Link href={"/"}>
+          <Link href={"/contact"}>
             <button className="clsproductdescription-header__button">
               GEt in touch
             </button>

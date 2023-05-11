@@ -18,7 +18,7 @@ const Contact = (props: Props) => {
         </div>
         <div className="clscontact-bg"></div>
         <div className="clscontact-footer">
-          <Link href={"/"}>
+          <Link href={"/contact"}>
             <button className="clscontact-footer__contact">
               {" "}
               GEt in touch
