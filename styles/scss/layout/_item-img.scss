@@ -2,13 +2,14 @@
   &-content {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
   }
   &-image {
     width: 100%;
     height: auto;
     object-fit: cover;
     transition: all 0.4s linear;
-    
+
     &:hover {
       transform: scale(1.06);
     }
