@@ -3,6 +3,9 @@
   @include res(1300px) {
     height: 750px;
   }
+  @include res(500px) {
+    height: 600px;
+  }
   position: relative;
   &-content {
     position: absolute;
@@ -16,6 +19,9 @@
     object-fit: cover;
     @include res(1300px) {
       height: 750px;
+    }
+    @include res(500px) {
+      height: 600px;
     }
   }
   &-text {
@@ -112,7 +118,10 @@
       z-index: 99;
       width: 100%;
       height: 600px;
-      background: linear-gradient($black-gradient-primary 0%, $black-gradient 100%);
+      background: linear-gradient(
+        $black-gradient-primary 0%,
+        $black-gradient 100%
+      );
     }
     @include res(1300px) {
       &::before {
@@ -123,7 +132,25 @@
         z-index: 99;
         width: 100%;
         height: 500px;
-        background: linear-gradient($black-gradient-primary 0%, $black-gradient 100%);
+        background: linear-gradient(
+          $black-gradient-primary 0%,
+          $black-gradient 100%
+        );
+      }
+    }
+    @include res(500px) {
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(
+          $black-gradient-primary 0%,
+          $black-gradient 100%
+        );
       }
     }
   }
